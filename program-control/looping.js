@@ -13,8 +13,14 @@
     }
 
     Variabel awal adalah nilai variabel sebelum looping dilakukan. Test kondisi adalah evaluasi dari looping, jika bernilai false, looping akan berhenti. Increment adalah nilai variabel yang bertambah setiap looping dilakukan.
+
+    Test kondisi yang mengontrol program looping.
 */
 
-for (let i = 5; i < 5; ++i) {
+for (let i = 0; i < 5; ++i) {
   console.log(`Angka ke-${i} adalah ${i}`);
+}
+
+for (let j = 0; (j = 100); ++j) {
+  console.log("Aku Sayang Kamu");
 }
