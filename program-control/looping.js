@@ -21,6 +21,23 @@ for (let i = 0; i < 5; ++i) {
   console.log(`Angka ke-${i} adalah ${i}`);
 }
 
-for (let j = 0; (j = 100); ++j) {
+for (let j = 0; (j = 1); ++j) {
   console.log("Aku Sayang Kamu");
+}
+
+/*
+  Penggunaan for in (biasa digunakan pada object)
+  For in banyak digunakan untuk pengulangan pada object karena ia dapat melakukan iterasi ke seluruh data di dalam objek. Bahkan, ia juga dapat melakukan iterasi ke properti inheritance dari object seperti length.
+
+  const nama_variabel = objek;
+  for (const nama_variabel_pada_for_in in nama_variabel) {
+    statement (lakukan sesuatu padaa loop ini)
+  }
+*/
+
+const object = { nama: "Shafwan", kelas: 12 };
+
+for (const value in object) {
+  console.log(value);
+  console.log(value[nama]);
 }
