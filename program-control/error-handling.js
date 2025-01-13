@@ -20,7 +20,7 @@
  */
 
 const price = 10000;
-const paid = 9000;
+const paid = 10000;
 
 if (price > paid) {
   throw new Error("Pembayaran Kurang");
@@ -43,6 +43,10 @@ if (price > paid) {
 */
 
 try {
-    console.log('Halo');
-    
+  console.log("Halo");
+  throw new Error("Hi"); // <-- blok pada catch akan dijalankan karena terdapat error pada blok try
+} catch (Error) {
+  console.log("YO");
+} finally {
+  console.log("TAK PEDULI APAPUN"); // <-- blok ini akan selalu dieksekusi tanpa memedulikan apakah pada try maupun catch tidak terdapat error
 }
