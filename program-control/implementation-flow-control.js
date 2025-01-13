@@ -1,6 +1,6 @@
 function checkGrades(grades) {
   for (let i = 0; i < grades.length; i++) {
-    if (typeof grades[i] !== "Number") {
+    if (typeof grades[i] !== "number") {
       throw new Error("Invalid input. Please provide an array of numbers");
     }
 
