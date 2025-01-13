@@ -21,9 +21,9 @@ for (let i = 0; i < 5; ++i) {
   console.log(`Angka ke-${i} adalah ${i}`);
 }
 
-for (let j = 0; (j = 1); ++j) {
-  console.log("Aku Sayang Kamu");
-}
+// for (let j = 0; (j = 1); ++j) {
+//   console.log("Aku Sayang Kamu");
+// }
 
 /*
   Penggunaan for in (biasa digunakan pada object)
@@ -33,11 +33,24 @@ for (let j = 0; (j = 1); ++j) {
   for (const nama_variabel_pada_for_in in nama_variabel) {
     statement (lakukan sesuatu padaa loop ini)
   }
+
+  For in akan melakukan perulangan item yang ada di dalam object (pada contoh object). Pada contoh di bawah, for akan melakukan looping semua item yang ada di dalam objek person. For in akan memperhatikan key-value
 */
 
 const object = { nama: "Shafwan", kelas: 12 };
 
 for (const value in object) {
   console.log(value);
-  console.log(value[nama]);
+  console.log(object[value]);
+}
+
+/*
+For of lebih sederhana dan tidak perlu memikirkan key-value / propertinya. Biasanya digunakan pada array.
+Dengan for of datanya bisa kita dapatkan langsung tanpa menambahkan indeks atau nama propertinya seperti contoh di atas. Sintaksnya lebih ringkas karena kita hanya perlu memanggil variabel item. Variabel item merupakan sebuah variabel yang digunakan untuk menampung element dari array. For of dapat digunakan pada object yang bisa diiterasi seperti arrays, strings, sets, dan maps.
+*/
+
+const names = ["Awan", "Moza"];
+
+for (const item of names) {
+  console.log(item);
 }
