@@ -26,11 +26,13 @@ anotherMap.set("nama", "Moza");
 anotherMap.set(1, "satu");
 console.log(anotherMap);
 
-// Mengakses nilai pada map, bisa dengan method .get('key') yang mau diakses
+// Mengakses nilai pada map, bisa dengan method .get('key') yang mau diakses, dan dengan method .has jika terdapat nilai pada Map, maka nilainya true.
 
 console.log(anotherMap.get(1));
+console.log(anotherMap.has(1));
 
 // Menghapus nilai pada map bisa dengan method .delete('key')
 
 anotherMap.delete("nama");
+console.log(anotherMap.has("nama"));
 console.log(anotherMap);

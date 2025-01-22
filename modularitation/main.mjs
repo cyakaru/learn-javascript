@@ -32,3 +32,17 @@ import { name as nameFromAnother } from "./anotherfile.mjs";
 import { name as nameFromAnotherAgain } from "./anotherfileagain.mjs";
 console.log(nameFromAnother);
 console.log(nameFromAnotherAgain);
+
+// .mjs artinya kita menggunakan ESModule
+/*
+TAMBAHAN UNTUK MENGGUNAKAN ESM PADA WEB
+<script src="./esmodule.js" type="module">
+kalo browser ga support
+<script nomodule src="fallback.js"></script>
+
+kalo mau inline
+<script type="module">
+  import App from "./app.js";
+  console.log(App);
+</script>
+*/
