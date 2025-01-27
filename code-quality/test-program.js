@@ -1,0 +1,4 @@
+/*
+Secara istilah, pengujian adalah proses memastikan keberhasilan suatu sistem untuk mencegah kegagalan saat beroperasi. Ada dua metode yang bisa kita lakukan. Jika tidak secara manual, kita akan lakukan pengujian aplikasi secara otomatis.
+Pengujian manual tentu banyak pihak mampu melakukannya. Cukup jalankan program dan perhatikan output yang dikeluarkan. Perbaikan akan dilakukan jika terjadi error. Namun, cara ini sangatlah rentan dilakukan sebab adanya keluputan manusia dan hal yang paling terasa adalah tingkat efisiensi sangat rendah. Tenaga manusia yang akan lebih banyak dibutuhkan di sini selain komputer. Jika memanfaatkan metode otomatis, kita bisa mendelegasikan tugas kepada mesin dan biarlah ia yang bekerja. Tidak mengenal waktu, letih, dan keluputan adalah karakteristik dari mesin.
+*/
