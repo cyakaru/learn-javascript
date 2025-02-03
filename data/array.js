@@ -76,3 +76,16 @@ console.log(methodArray);
 // Mengurutkan nilai array (sort)
 methodArray.sort();
 console.log(methodArray);
+
+const eum = ["apple", ...["banana"]];
+console.log(eum);
+
+const promise1 = Promise.resolve(3);
+const promise2 = 42;
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, "foo");
+});
+
+Promise.all([promise1, promise2, promise3]).then((values) => {
+  console.log(values);
+});
